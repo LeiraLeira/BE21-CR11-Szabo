@@ -30,6 +30,9 @@ if(mysqli_num_rows($result)  > 0) {
         <td>" .$row['age']."</td>
         <td>" .$row['petSize']."</td>
         <td>" .$row['breed']."</td>
+        <td>
+        <a href='products/create.php?id=" .$row['id']."'><button class='btn btn-danger btn-sm' type='button'>Take me home</button></a>
+        </td>
         </tr>";
      };
 } else  {
@@ -90,6 +93,7 @@ $connect->close();
                <th>Age</th>
                <th>PetSize</th>
                <th>Breed</th>
+               <th>Action</th>
            </tr>
            </tr>
        </thead>

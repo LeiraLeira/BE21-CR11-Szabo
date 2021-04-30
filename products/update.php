@@ -74,27 +74,27 @@ if ($_GET['id']) {
 
            <tr>
                <th>Description</th>
-               <td><input class='form-control' type="text" name="description"  placeholder="Product Name" /></td>
+               <td><input class='form-control' type="text" name="description"  placeholder="Description" /></td>
            </tr>    
            <tr>
                <th>Address</th>
-               <td><input class='form-control' type="text" name="address"  placeholder="Product Name" /></td>
+               <td><input class='form-control' type="text" name="address"  placeholder="Address" /></td>
            </tr>    
            <tr>
                <th>Hobbies</th>
-               <td><input class='form-control' type="text" name="hobbies"  placeholder="Product Name" /></td>
+               <td><input class='form-control' type="text" name="hobbies"  placeholder="Hobbies" /></td>
            </tr>    
            <tr>
                <th>Age</th>
-               <td><input class='form-control' type="text" name="age"  placeholder="Product Name" /></td>
+               <td><input class='form-control' type="text" name="age"  placeholder="Age" /></td>
            </tr>    
            <tr>
                <th>Petsize</th>
-               <td><input class='form-control' type="text" name="petSize"  placeholder="Product Name" /></td>
+               <td><input class='form-control' type="text" name="petSize"  placeholder="Petsize" /></td>
            </tr>    
            <tr>
                <th>Breed</th>
-               <td><input class='form-control' type="text" name="breed"  placeholder="Product Name" /></td>
+               <td><input class='form-control' type="text" name="breed"  placeholder="Breed" /></td>
            </tr>    
 
 
