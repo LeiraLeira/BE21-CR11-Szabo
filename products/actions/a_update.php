@@ -1,3 +1,4 @@
+
 <?php
 session_start();
 
@@ -24,37 +25,18 @@ if ($_POST) {
     $age = $_POST['age'];
     $petSize = $_POST['petSize'];
     $breed = $_POST['breed'];
+    $price = $_POST['price'];
+    $supplier = $_POST['supplier'];
     $id = $_POST['id'];
     //variable for upload pictures errors is initialized
     $uploadError = '';
 
-
-//     if($name == 'none')
-//     {
-//    //checks if the supplier is undefined and insert null in the DB
-//     $sql = "INSERT INTO products (name, picture, description, address, hobbies, age, petSize, breed) 
-//     VALUES ('$name', '$picture->fileName', '$description', '$address', '$hobbies', '$age', '$petSize', '$breed')";
-//    }
-//    else
-//    {
-//     $sql = "INSERT INTO products (name, picture, description, address, hobbies, age, petSize, breed) 
-//     VALUES ('$name', '$picture->fileName', '$description', '$address', '$hobbies', '$age', '$petSize', '$breed')";
-//    }
-
-
-
-
     $picture = file_upload($_FILES['picture'], 'product');//file_upload() called  
         if($picture->error===0){
             ($_POST["picture"]=="product.png")?: unlink("../../pictures/$_POST[picture]");           
-            $sql = "UPDATE products 
-            SET name = '$name', description = $description, address = $address, hobbies = $hobbies, age = $age, petSize = $petSize, breed  = $breed, picture = '$picture->fileName' 
-            WHERE id = {$id}";
-        }
-        else
-        {
-            $sql = "UPDATE products SET name = '$name'
-            WHERE id = {$id}";
+            $sql = "UPDATE products SET name = '$name', price = $price, description = '$description', address = '$address', hobbies = '$hobbies', age = '$age', petSize = '$petSize', breed = 'breed', picture = '$picture->fileName', fk_supplierId = $supplier WHERE id = {$id}";
+        }else{
+            $sql = "UPDATE products SET name = '$name', price = $price, description = '$description', address = '$address', hobbies = '$hobbies', age = '$age', petSize = '$petSize', breed = '$breed', fk_supplierId = $supplier WHERE id = {$id}";
         }    
         if ($connect->query($sql) === TRUE) {
             $class = "success";
