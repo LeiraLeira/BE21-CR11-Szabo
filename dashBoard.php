@@ -68,16 +68,16 @@ $connect->close();
         <div class="container">
             <div class="row">
                 <div class="col-2">
-                    <img class="userImage" src="pictures/admavatar.png" alt="Adm avatar">
+                    <img class="userImage" src="pictures/608c0a77d0929.jpg" alt="Adm avatar">
                     <p class="">Administrator</p>
-                    <a href="products/index.php">Edit Animals</a>
+                    <a href="index_products_user_all.php">All Animals</a>
                     <br>
                     <a href="senior.php">Senior Animals</a>
                     <br>
-                    <a href="index_products_user_all.php">All Animals</a>
-                    
+                    <a href="products/index.php">Edit Animals</a>
                     <br>
                     <a href="logout.php?logout">Sign Out</a>
+                    
                 </div>
                 <div class="col-8 mt-2">
                     <p class='h2'>Users</p>

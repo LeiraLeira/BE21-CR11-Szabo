@@ -41,13 +41,16 @@ $connect->close();
     <body>
         <div class="container">
             <div class="hero">
-                <img class="userImage" src="pictures/<?php echo $row['picture']; ?>" alt="<?php echo $row['first_name']; ?>">
+                <img class="userImage" src="pictures/608c0a367d3a7.jpg" alt="<?php echo $row['first_name']; ?>">
                 <p class="text-white" >Hi <?php echo $row['first_name']; ?></p>
             </div>
-            <a href="logout.php?logout">Sign Out</a>
-            <a href="update.php?id=<?php echo $_SESSION['user'] ?>">Update your profile</a>
             <a href="index_products_user_all.php">All Animals</a>
+            <br>
             <a href="senior.php">Senior Animals</a>
+            <br>
+            <a href="update.php?id=<?php echo $_SESSION['user'] ?>">Update your profile</a>
+            <br>
+            <a href="logout.php?logout">Sign Out</a>
         </div>
     </body>
 </html>

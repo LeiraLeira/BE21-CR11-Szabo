@@ -76,6 +76,9 @@ $connect->close();
    <div class='mb-3'>
    <a href= "create.php"><button class='btn btn-primary'type="button" >Add Animal</button></a>
    <a href= "../dashboard.php"><button class='btn btn-primary'type="button" >Back</button></a>
+   <a href= "../logout.php?logout"><button class='btn btn-primary'type="button" >Sign Out</button></a>
+   
+
    </div>
    <p class='h2'>Animals</p>
    
